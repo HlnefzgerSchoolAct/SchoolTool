@@ -1,0 +1,8 @@
+dist/
+node_modules/
+.DS_Store
+.openai/
+*.log
+SchoolTool.zip
+SchoolTool-backup-*.json
+qa-responsive.html
