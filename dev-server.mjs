@@ -3,7 +3,7 @@ import path from 'node:path';
 import {readFile,stat} from 'node:fs/promises';
 const portFlag=process.argv.indexOf('--port');
 const root=process.cwd(),port=Number(portFlag>=0?process.argv[portFlag+1]:process.env.PORT)||3000;
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.pdf':'application/pdf','.json':'application/json'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.svg':'image/svg+xml','.pdf':'application/pdf','.json':'application/json','.webmanifest':'application/manifest+json','.png':'image/png'};
 http.createServer(async(req,res)=>{
  try{
   const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);

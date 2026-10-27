@@ -6,3 +6,5 @@ node_modules/
 SchoolTool.zip
 SchoolTool-backup-*.json
 qa-responsive.html
+SchoolTool-update-*.zip
+SchoolTool-recovery*.json

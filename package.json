@@ -1,5 +1,5 @@
 {
-  "name": "schooltool", "version": "1.0.0", "private": true, "type": "module",
+  "name": "schooltool", "version": "2.0.0", "private": true, "type": "module",
   "description": "A West Delaware school desktop. Static, private by design, and ready for GitHub Pages.",
   "scripts": {"dev": "node dev-server.mjs", "start": "node dev-server.mjs", "test": "node --test tests/*.test.mjs", "build": "node build.mjs"},
   "engines": {"node": ">=20"}

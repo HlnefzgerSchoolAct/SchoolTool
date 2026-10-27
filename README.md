@@ -1,5 +1,7 @@
 # SchoolTool
 
+**Version 2.0 update:** Already have SchoolTool? Follow [UPDATE.md](UPDATE.md) to apply the incremental update to your existing Codespace. Your current desktop design, B-lunch bell schedules, and GitHub Pages setup are retained.
+
 A polished West Delaware desktop for your school day. A live class countdown, B-lunch bell schedules, everyday school links, a focus timer, and a personal scratchpad — all in a static website you can host on GitHub Pages.
 
 ## Start in a Codespace
@@ -47,7 +49,13 @@ Official instructions: [GitHub Pages publishing sources](https://docs.github.com
 - 25-minute and 50-minute focus sessions, a 5-minute break, pause/resume/reset, and a completed-session count. Timers use a target timestamp, so switching tabs does not cause countdown drift.
 - Saved notes and tasks, light/dark appearance, copper/graphite wallpaper, and JSON backup import/export.
 - Responsive layouts, keyboard-accessible controls, reduced-motion support, and no external scripts or fonts.
-- A subtle West Delaware wrestling card linked to the school’s Bound athletics page.
+- A personal wrestling practice/meet planner with packing checklists and a next-event card. The Athletics app still opens Bound.
+- An always-visible class clock and a dedicated full-screen clock view.
+- Assignment due dates, class tags, priorities, links, filters, editing, and undo.
+- Weekday class overrides, teacher/class links, and dated no-school or alternate-schedule exceptions.
+- Independently movable, resizable, and snappable notes/focus windows.
+- A customizable app dock, safer multi-tab saves, recovery exports, and a pre-import restore point.
+- An installable app shell and offline access after a successful first online load over HTTPS.
 
 ## Bell schedule and timing
 
@@ -66,7 +74,7 @@ Wednesday returns to class at **11:30 AM**, and delay days return at **1:20 PM**
 
 Optional Intervention / Reteach runs **3:00–3:30 PM** on regular, homeroom, and delay days. It is off by default. Class periods are half-open intervals: exactly at the end bell, the display moves into passing time, lunch, the next class, or school-out status.
 
-**Holidays, closures, and special events are not automatically fetched.** Set today’s override from My schedule or Settings when needed. The override expires at midnight in Iowa. Preview tabs in My schedule only preview another timetable; they do not change the live schedule.
+**Holidays, closures, and special events are not automatically fetched.** Add them in Special dates in advance, or set today’s override from My schedule or Settings when needed. The override expires at midnight in Iowa. Preview tabs in My schedule only preview another timetable; they do not change the live schedule.
 
 ## Where your information lives
 
@@ -75,6 +83,10 @@ Class names, settings, links, notes, and tasks are saved in this browser’s `lo
 Settings entered in a Codespace preview do not automatically appear on the deployed GitHub Pages origin. **Export a backup in the preview, then import it on the live website** if you personalize before deployment. Backups are plain JSON and contain your notes and tasks; keep them out of a public repository. Clearing browser site data removes your saved workspace unless you have a backup. Import shows a confirmation before replacing the current workspace.
 
 The timer’s completion message is in-app. There is no background push notification after you close the site. With the site open, a background tab may display the message when it becomes active again.
+
+## Update and offline behavior
+
+See [UPDATE.md](UPDATE.md) for migration, offline limits, recovery, validation, and the complete changed-file list. Version 1 data is migrated on the same browser origin; its original storage record is retained. Install support depends on the browser. External school services always require their own connection and sign-in.
 
 ## Files and commands
 
